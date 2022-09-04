@@ -1,0 +1,51 @@
+.app-container {
+    background-color: #ffffff;
+    margin-top: 0.25rem;
+    margin-bottom: 5rem;
+
+    & > .app-container__receipts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    & > .app-container__nav {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        inset: auto 0 0 0;
+        border-top: 1px solid #e8dfed;
+        background-color: #ffffff;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        & > .total-price {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            color: #250b38;
+
+            & > .total-price__text {
+                font-weight: 500;
+            }
+
+            & > .total-price__value {
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.receipt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 49%;
+    }
+
+    & > .receipt__header,
+    & > .receipt__body {
+        display: flex;
+        gap: 0.75rem;
+        border-radius: 0.25rem;
+        padding: 0.75rem;
+    }
+
+    & > .receipt__header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #250b38;
+    }
+
+    & > .receipt__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #f4eef7;
+
+        & > .receipt__body__expenses {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        & > .receipt__body__total-price {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            & > .receipt__body__total-price__text {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #250b38;
+            }
+
+            & > .receipt__body__total-price__value {
+                font-size: 1.125rem;
+                font-weight: bold;
+                color: #250b38;
+            }
+        }
+    }
+}

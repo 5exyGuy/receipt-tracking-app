@@ -1,0 +1,27 @@
+.input {
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    border: 1px solid #eae8ec;
+    padding: 0.5625rem;
+    font-size: 0.875rem;
+    color: #52526a;
+    font-weight: 500;
+    width: 100%;
+
+    &:focus {
+        border: 1px solid #f0a023;
+    }
+
+    &::placeholder {
+        color: #52526a;
+        opacity: 0.4;
+    }
+
+    &:-ms-input-placeholder {
+        color: #52526a;
+    }
+
+    &::-ms-input-placeholder {
+        color: #52526a;
+    }
+}
