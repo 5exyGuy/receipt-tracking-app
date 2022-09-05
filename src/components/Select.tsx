@@ -23,7 +23,7 @@ export function Select({ options, onChange }: SelectProps) {
             <div tabIndex={0} className="select__value" ref={ref}>
                 <span>{selected !== -1 ? options[selected] : 'Select'}</span>
                 <svg
-                    className="select__icon"
+                    style={{ color: '#f0a023' }}
                     width="15"
                     height="15"
                     viewBox="0 0 15 15"
